@@ -96,7 +96,7 @@ body {
 /* 🔥 형태 변화 박스 */
 .forms { 
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); 
+  grid-template-columns:1fr !important; 
   gap:18px; 
   margin-top:16px; 
 }
@@ -239,3 +239,4 @@ body {
   background-color: #f0f0f0;
   border-color: #aaa;
 }
+
