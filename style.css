@@ -1,0 +1,241 @@
+body { 
+  font-family:'Poppins','Arial',sans-serif;
+  background:#FFF8F0; 
+  margin:0; 
+  padding:5px; 
+  display:flex; 
+  justify-content:center; 
+}
+
+/* 전체 가로 폭 확장 */
+.container { 
+  width:100%; 
+  max-width:1280px; 
+}
+
+/* 🔥 SNS 스타일 헤더 */
+.title-box { 
+  text-align:center;
+  background: linear-gradient(135deg, #FFE5C4, #FFD4A3);
+  border-radius:20px; 
+  padding:18px 10px;
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+  border:2px solid #E7A86A;
+  margin-bottom:0px; 
+}
+.title-main { 
+  font-size:26px; 
+  font-weight:900; 
+  color:#4A2E0D; 
+  letter-spacing:-0.5px;
+}
+
+.voice-guide {
+  font-size:13px; 
+  color:#888; 
+  margin:10px 0 0 0;
+  line-height:1.3; 
+  text-align:center;
+}
+
+/* 🔥 메인 영어 */
+.big-eng { 
+  font-size:38px; 
+  font-weight:900;
+  background: linear-gradient(90deg, #E87D2E, #F5A623);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-align:center;
+  margin-top:20px;
+  margin-bottom:12px;
+}
+
+/* 🔥 메인 카드 */
+.card { 
+  background:white;
+  border-radius:20px; 
+  padding:26px; 
+  margin-top:20px; 
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.12),
+    0 4px 8px rgba(0,0,0,0.10);
+  border:2px solid #F2D3AC;
+}
+
+/* 🔥🔥 메인 동사 + 스피커 박스 */
+#main-verb-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+/* 메인 한국어 동사 */
+.kor-main { 
+  font-size:40px; 
+  font-weight:900; 
+  color:#E57A1F; 
+  margin:0; 
+  text-align:center; 
+}
+.roman { 
+  color:#7A6A54; 
+  text-align:center; 
+  margin-bottom:14px; 
+  font-size:16px; 
+}
+
+.section-title {
+  margin-top:22px; 
+  font-weight:900; 
+  color:#3D2A13; 
+  font-size:20px; 
+}
+
+/* 🔥 형태 변화 박스 */
+.forms { 
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(380px,1fr)); 
+  gap:18px; 
+  margin-top:16px; 
+}
+
+.form-item { 
+  background:white; 
+  padding:16px 20px; 
+  border-radius:18px; 
+  display:flex; 
+  align-items:center;
+  justify-content:space-between; 
+  cursor:pointer;
+  border:3px solid transparent; 
+  transition:.3s;
+  box-shadow:0 6px 14px rgba(0,0,0,.10);
+}
+
+/* 🔥🔥 시제별 배경 */
+.form-item[data-id="present"] {
+  background: linear-gradient(135deg, #FF88A8, #FF5C8A); 
+  border-color: #E03058;
+}
+.form-item[data-id="past"] {
+  background: linear-gradient(135deg, #8AF5E4, #4CDAD3); 
+  border-color: #30B0A8;
+}
+.form-item[data-id="future"] {
+  background: linear-gradient(135deg, #C4A8FF, #9B7CFF); 
+  border-color: #7A4FFF;
+}
+
+.form-item:hover {
+  opacity: 0.9;
+  transform:translateY(-4px); 
+  box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.form-text { 
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.label { 
+  font-weight:900; 
+  color:#2A1B0D; 
+  font-size:16px; 
+}
+
+/* 🔥 한국어 활용형 */
+.kor { 
+  font-size:30px; 
+  color:#fff; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight:900;
+}
+
+.roman-small { 
+  color:#4A351E; 
+  font-size:14px; 
+}
+.eng-small { 
+  color:#2A1B0D; 
+  font-size:18px; 
+  font-weight:600; 
+}
+
+/* 스피커 버튼 */
+.speaker-btn { 
+  background:white;
+  border:3px solid #F0A05A; 
+  border-radius:15px; 
+  padding:6px 10px; 
+  cursor:pointer; 
+  font-size:16px; 
+  box-shadow:0 4px 8px rgba(0,0,0,.10);
+  transition:.3s;
+}
+.speaker-btn:hover { 
+  background:#E38A3A; 
+  color:#fff; 
+  transform:scale(1.1); 
+}
+
+.speaker-btn.main-speaker {
+  padding: 10px 14px;
+  font-size: 20px;
+}
+
+/* NEXT 버튼 */
+.controls { 
+  display:flex; 
+  justify-content:flex-end; 
+  margin-top:25px; 
+}
+.btn.next { 
+  padding:14px 25px; 
+  border-radius:16px; 
+  border:none; 
+  cursor:pointer; 
+  font-weight:900;
+  font-size:18px; 
+  background:linear-gradient(135deg,#F29A3F,#F7BB55);
+  color:#fff;
+  box-shadow:0 8px 16px rgba(0,0,0,.20); 
+  transition:.3s;
+}
+.btn.next:hover {
+  transform:translateY(-5px); 
+  box-shadow:0 15px 25px rgba(0,0,0,.25);
+}
+
+/* 모바일 최적화 */
+@media(max-width:420px){
+  .kor-main{font-size:38px;} 
+  .big-eng{font-size:34px;}
+  .forms{grid-template-columns:1fr;}
+  .form-item{padding:12px;} 
+  .kor{font-size:26px;} 
+  .eng-small{font-size:16px;}
+  .speaker-btn{font-size:14px; padding:4px 8px;}
+  .speaker-btn.main-speaker{padding:8px 10px; font-size:16px;}
+}
+
+/* 하단 광고 버튼 스타일 */
+.minimal-button {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 80px;
+  font-size: 30px;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+.minimal-button:hover {
+  background-color: #f0f0f0;
+  border-color: #aaa;
+}
